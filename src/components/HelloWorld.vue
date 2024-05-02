@@ -112,6 +112,9 @@ import { Options, Vue } from "vue-class-component";
 })
 export default class HelloWorld extends Vue {
   msg!: string;
+  mounted() {
+    document.title = "HelloWorld"; // 可以根据实际情况动态设置
+  }
 }
 </script>
 
